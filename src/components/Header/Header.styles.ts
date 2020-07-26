@@ -9,17 +9,17 @@ export const StyledHeader = styled.header`
   z-index: 2;
   width: 100%;
   padding: 18px 160px 18px 160px;
-  transition: box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, background-color 300ms linear;
 
   ${(props) =>
     props.fixed &&
     css`
       border-bottom: 1px solid ${rgba('#111b47', 0.1)};
-      background-color: #ffffff;
+      background-color: #f3f5ff;
     `}
 
   :hover {
-    box-shadow: 1px 2px 4px 1px ${rgba('#000000', 0.1)};
+    box-shadow: 1px 2px 4px 1px ${rgba('#111b47', 0.1)};
   }
 
   ${device.tablet} {

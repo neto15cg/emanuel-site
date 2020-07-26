@@ -19,10 +19,10 @@ export const IntroduceSectionContainer = styled.section`
   min-height: 1112px;
   width: 100%;
   z-index: 1;
+  background-image: linear-gradient(#c0cbff, #dae0ff, #f3f5ff);
 
   ${device.desktop} {
     padding: 200px 160px 200px 160px;
-    background-image: linear-gradient(#c0cbff, #dae0ff, #f3f5ff);
   }
 
   ${device.tablet} {
@@ -30,7 +30,6 @@ export const IntroduceSectionContainer = styled.section`
     display: flex;
     justify-content: center;
     min-height: 0;
-    background-image: linear-gradient(#c0cbff, #dae0ff, #f3f5ff);
     ${IntroduceSectionContainerBg} {
       opacity: 0.1;
     }
@@ -40,11 +39,9 @@ export const IntroduceSectionContainer = styled.section`
     display: flex;
     justify-content: center;
     padding: 120px 30px 120px 30px;
-    background-color: #f3f5ff;
     min-height: 0;
 
     ${IntroduceSectionContainerBg} {
-      display: none;
       opacity: 0.1;
     }
   }

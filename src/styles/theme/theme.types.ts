@@ -6,8 +6,6 @@ export interface Theme {
   fontSizes: string[];
   breakpoints: string[];
   global: GlobalTheme;
-  forms: FormsTheme;
-  behavior: BehaviorsTheme;
 }
 
 // Global

@@ -20,7 +20,7 @@ const HighLightSection = () => {
                 <img src={ParceriaSvg} alt="Parceria" width={80} height={80} />
                 <HightLightCardTitle>Parceria</HightLightCardTitle>
                 <HightLightCardDescription>
-                  Somos parceiros dos nossos clientes e estamos atentos para que cada detalhe saia como desejar
+                  Somos parceiros dos nossos clientes e estamos atentos para que cada detalhe saia como sonhado
                 </HightLightCardDescription>
               </HightLightCard>
             </Box>
@@ -30,7 +30,7 @@ const HighLightSection = () => {
               <HightLightCard>
                 <img src={SegurancaSvg} alt="Segurança" width={80} height={80} />
                 <HightLightCardTitle>Segurança</HightLightCardTitle>
-                <HightLightCardDescription>Nossa empresa tem registro ativo no CREA com o número 123123 </HightLightCardDescription>
+                <HightLightCardDescription>Temos registro ativo no CREA com o número 123123 </HightLightCardDescription>
               </HightLightCard>
             </Box>
           </Col>
@@ -39,7 +39,7 @@ const HighLightSection = () => {
               <HightLightCard>
                 <img src={AgilidadeSvg} alt="Agilidade" width={80} height={80} />
                 <HightLightCardTitle>Agilidade</HightLightCardTitle>
-                <HightLightCardDescription>Nós entendemos que seu sonho precisa ser realizado o mais rápido possível</HightLightCardDescription>
+                <HightLightCardDescription>Queremos que seu sonho seja realizado o quanto antes</HightLightCardDescription>
               </HightLightCard>
             </Box>
           </Col>
