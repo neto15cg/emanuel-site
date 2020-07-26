@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { device } from '@styles/tools/breakpoints.styles';
-//@ts-ignore
+// @ts-ignore
 import Divider from '../../assets/images/divider.svg';
 
 export const ServiceSectionContainer = styled.section`

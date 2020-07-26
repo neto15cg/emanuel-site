@@ -24,7 +24,7 @@ export const GalelerySectionContainer = styled.section`
 `;
 
 export const AnimatedDivRight = styled.div`
-  margin-left: 100vw;
+  margin-left: -100vw;
   width: 100%;
   height: 100%;
 
