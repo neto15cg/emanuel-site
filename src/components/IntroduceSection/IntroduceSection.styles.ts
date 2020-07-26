@@ -5,7 +5,7 @@ export const IntroduceSectionContainerBg = styled.div`
   position: absolute;
   min-height: 100%;
   width: 100%;
-  background-image: url(../../assets/images/background1.svg);
+  background-image: url(../../assets/images/divider.png);
   opacity: 0.4;
   background-repeat: no-repeat;
   background-position-x: right;

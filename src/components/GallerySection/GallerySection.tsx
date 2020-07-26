@@ -4,24 +4,27 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import { GallerySectionProps } from './GallerySection.types';
 import { GalelerySectionContainer, AnimatedDivRight } from './GallerySection.styles';
 
+// @ts-ignore
+import Profile from '../../assets/images/profile.jpeg';
+
 const photos = [
   {
-    src: '../../assets/images/profile.jpeg',
+    src: Profile,
     width: 3,
     height: 4,
   },
   {
-    src: '../../assets/images/profile.jpeg',
+    src: Profile,
     width: 3,
     height: 4,
   },
   {
-    src: '../../assets/images/profile.jpeg',
+    src: Profile,
     width: 3,
     height: 4,
   },
   {
-    src: '../../assets/images/profile.jpeg',
+    src: Profile,
     width: 3,
     height: 4,
   },
