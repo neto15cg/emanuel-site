@@ -70,6 +70,8 @@ export const Logo = styled.a`
 export const RequestBudget = styled.button`
   display: flex;
   background: none;
+  align-items: center;
+  justify-content: center;
   color: inherit;
   border: none;
   padding: 0;
