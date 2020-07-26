@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 import { device } from '@styles/tools/breakpoints.styles';
+//@ts-ignore
+import Divider from '../../assets/images/divider.svg';
 
 export const ServiceSectionContainer = styled.section`
   position: relative;
@@ -48,7 +50,7 @@ export const ServiceDeviderTop = styled.div`
   right: 0;
   width: 100%;
   height: 121px;
-  background-image: url(../../assets/images/divider.svg);
+  background-image: url(${Divider});
 `;
 
 export const ServiceDeviderBottom = styled.div`
@@ -57,7 +59,7 @@ export const ServiceDeviderBottom = styled.div`
   right: 0;
   width: 100%;
   height: 122px;
-  background-image: url(../../assets/images/divider.svg);
+  background-image: url(${Divider});
   transform: rotate(180deg);
 `;
 
