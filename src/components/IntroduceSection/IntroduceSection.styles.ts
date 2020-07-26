@@ -1,17 +1,33 @@
 import styled from 'styled-components';
 import { device } from '@styles/tools/breakpoints.styles';
 
+// @ts-ignore
+import BackgroundImg from '../../assets/images/background1.svg';
+
+// @ts-ignore
+import Divider from '../../assets/images/divider.svg';
+
 export const IntroduceSectionContainerBg = styled.div`
   position: absolute;
   min-height: 100%;
   width: 100%;
-  background-image: url(../../assets/images/divider.png);
+  background-image: url(${BackgroundImg});
   opacity: 0.4;
   background-repeat: no-repeat;
   background-position-x: right;
   top: 0;
   right: 0;
   z-index: -1;
+`;
+
+export const IntroduceDevider = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 122px;
+  background-image: url(${Divider});
+  transform: rotate(180deg);
 `;
 
 export const IntroduceSectionContainer = styled.section`
@@ -73,14 +89,4 @@ export const DescriptionIntroduce = styled.p`
 
 export const ProfileImg = styled.img`
   border-radius: 30px;
-`;
-
-export const IntroduceDevider = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 122px;
-  background-image: url(../../assets/images/divider.png);
-  transform: rotate(180deg);
 `;

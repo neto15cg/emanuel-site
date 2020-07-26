@@ -48,7 +48,7 @@ export const ServiceDeviderTop = styled.div`
   right: 0;
   width: 100%;
   height: 121px;
-  background-image: url(../../assets/images/divider.png);
+  background-image: url(../../assets/images/divider.svg);
 `;
 
 export const ServiceDeviderBottom = styled.div`
@@ -57,7 +57,7 @@ export const ServiceDeviderBottom = styled.div`
   right: 0;
   width: 100%;
   height: 122px;
-  background-image: url(../../assets/images/divider.png);
+  background-image: url(../../assets/images/divider.svg);
   transform: rotate(180deg);
 `;
 
