@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { device } from '@styles/tools/breakpoints.styles';
 
 export const ServiceSectionContainer = styled.section`
@@ -23,6 +23,23 @@ export const ServiceSectionContainer = styled.section`
     justify-content: center;
     padding: 120px 30px 120px 30px;
   }
+`;
+
+export const AnimatedDiv = styled.div`
+  margin-left: -100vw;
+  width: 100%;
+  height: 100%;
+
+  @keyframes slide-in-left {
+    100% {
+      margin-left: 0;
+    }
+  }
+  ${(props) =>
+    props.show &&
+    css`
+      animation: slide-in-left 700ms forwards;
+    `}
 `;
 
 export const ServiceDeviderTop = styled.div`

@@ -20,16 +20,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "axios": "^0.19.2",
     "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-hook-form": "^6.0.8",
     "react-hot-loader": "^4.12.21",
-    "react-inlinesvg": "^2.0.0",
-    "react-router-dom": "^5.2.0",
-    "react-toastify": "^6.0.8"
+    "react-images": "^1.1.7",
+    "react-photo-gallery": "^8.0.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",

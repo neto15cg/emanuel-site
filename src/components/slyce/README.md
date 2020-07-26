@@ -1,4 +1,4 @@
-# Slyce – Agilize Grid System
+# Slyce – Grid System
 
 Slyce é um grid system que fraciona o viewport em 24 pedaços e pode ser utilizado para formatar o layout de diversas formas, simples e rápido.
 
@@ -11,20 +11,20 @@ Existem 3 componentes core para a configuração da estruturas.
 O primeiro componente é o `Container`, que deve envolver os demais componentes da composição. O papel dele, além de manter a estrutura em bloco, é aplicar um passing de meio gutter ($gutterSpace) para caso o usuário queira criar espaçamentos iguais entre as colunas.
 
 
-| Propriedades | Descrição | Types
-| --- | --- | --- |
-| children | Recebe um react node como filho | React Node |
-| className | É possível atribuir uma classe específica ao container | string |
+| Propriedades | Descrição                                              | Types      |
+| ------------ | ------------------------------------------------------ | ---------- |
+| children     | Recebe um react node como filho                        | React Node |
+| className    | É possível atribuir uma classe específica ao container | string     |
 
 <br>
 
 ##### Row
 O componente Row é o responsável por manter as colunas lado a lado.
 
-| Propriedades | Descrição | Types
-| --- | --- | --- |
-| children | Recebe um react node como filho | React Node |
-| className | É possível atribuir uma classe específica a Row | string |
+| Propriedades   | Descrição                                                           | Types                                                               |
+| -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| children       | Recebe um react node como filho                                     | React Node                                                          |
+| className      | É possível atribuir uma classe específica a Row                     | string                                                              |
 | justifyContent | Uso de colunas com espaçamento menor que 24 frações e realinhamento | 'flex-start', 'flex-end', 'center', 'space-between', 'space-around' |
 
 <br>
@@ -80,16 +80,16 @@ Ainda na coluna, é disponibilizado a propriedade `align-self`. Isso permite que
 
 <br>
 
-| Propriedades | Descrição | Types
-| --- | --- | --- |
-| children | Recebe um react node como filho | React Node |
-| className | É possível atribuir uma classe específica à Coluna | string |
-| small | Quantidade de frações da tela utilizada por dispositivos pequenos | number |
-| medium | Quantidade de frações da tela utilizada por dispositivos médios | number |
-| large | Quantidade de frações da tela utilizada por dispositivos grandes | number |
-| noGutter | Remove o espaçamento entre colunas | boolean (default: false) |
-| offsetLeft | Adiciona um espaçamento esquerdo na coluna com valor igual a frações de coluna | number (default: 0) |
-| alignSelf | Permite que as colunas sejam alinhadas verticalmente às demais colunas | 'flex-start', 'center', 'flex-end' |
+| Propriedades | Descrição                                                                      | Types                              |
+| ------------ | ------------------------------------------------------------------------------ | ---------------------------------- |
+| children     | Recebe um react node como filho                                                | React Node                         |
+| className    | É possível atribuir uma classe específica à Coluna                             | string                             |
+| small        | Quantidade de frações da tela utilizada por dispositivos pequenos              | number                             |
+| medium       | Quantidade de frações da tela utilizada por dispositivos médios                | number                             |
+| large        | Quantidade de frações da tela utilizada por dispositivos grandes               | number                             |
+| noGutter     | Remove o espaçamento entre colunas                                             | boolean (default: false)           |
+| offsetLeft   | Adiciona um espaçamento esquerdo na coluna com valor igual a frações de coluna | number (default: 0)                |
+| alignSelf    | Permite que as colunas sejam alinhadas verticalmente às demais colunas         | 'flex-start', 'center', 'flex-end' |
 
 <br>
 

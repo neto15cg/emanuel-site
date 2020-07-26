@@ -3,14 +3,16 @@ import IntroduceSection from '@components/IntroduceSection/IntroduceSection';
 import Header from '@components/Header/Header';
 import HighLightSection from '@components/HighLightSection/HightLightSection';
 import ServiceSection from '@components/ServiceSection/ServiceSection';
+import GallerySection from '@components/GallerySection/GallerySection';
 import { ButtonHeader, HeaderContent, HeaderButtonsContainer, Logo, RequestBudget } from './Dashboard.styles';
+
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const Dashboard = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const introduceSectionRef = useRef(null);
   const serviceSectionRef = useRef(null);
-
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const gallerySectionRef = useRef(null);
 
   const handleScroll = () => {
     setScrollPosition(document.documentElement.scrollTop);
@@ -32,7 +34,7 @@ const Dashboard = () => {
             <ButtonHeader to="/">Contato</ButtonHeader>
           </HeaderButtonsContainer>
           <Logo to="/">EM</Logo>
-          <RequestBudget>Solicite Orçamento</RequestBudget>
+          <RequestBudget>Solicite orçamento</RequestBudget>
         </HeaderContent>
       </Header>
       <div ref={introduceSectionRef}>
@@ -43,7 +45,20 @@ const Dashboard = () => {
         <HighLightSection />
       </div>
       <div ref={serviceSectionRef}>
-        <ServiceSection />
+        <ServiceSection
+          show={
+            scrollPosition + 700 >
+            ((serviceSectionRef && serviceSectionRef.current && serviceSectionRef.current.offsetTop && serviceSectionRef.current.offsetTop) || 0)
+          }
+        />
+      </div>
+      <div ref={gallerySectionRef}>
+        <GallerySection
+          show={
+            scrollPosition + 700 >
+            ((gallerySectionRef && gallerySectionRef.current && gallerySectionRef.current.offsetTop && gallerySectionRef.current.offsetTop) || 0)
+          }
+        />
       </div>
     </>
   );
